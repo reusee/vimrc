@@ -55,9 +55,10 @@ set scrolloff=5
 "au InsertEnter * set scrolloff=2
 "au InsertLeave * set scrolloff=25
 set relativenumber
+set guitablabel=%M%t
 
 " File
-set undofile
+"set undofile
 set hidden
 set encoding=utf-8
 set fileencoding=utf-8
