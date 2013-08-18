@@ -24,7 +24,11 @@ let g:ycm_complete_in_comments=1
 let g:ycm_collect_identifiers_from_comments_and_strings=1
 let g:ycm_add_preview_to_completeopt=0
 
-let g:airline_powerline_fonts=1
+"let g:airline_powerline_fonts=1
+let g:airline_left_sep=""
+let g:airline_left_alt_sep=""
+let g:airline_right_sep=""
+let g:airline_right_alt_sep=""
 
 " Appearance
 "set list
@@ -51,7 +55,7 @@ set ttyfast
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
-set scrolloff=5
+"set scrolloff=5
 "au InsertEnter * set scrolloff=2
 "au InsertLeave * set scrolloff=25
 set relativenumber
