@@ -132,9 +132,9 @@ nmap <leader>t :tabe<SPACE>
 
 nmap <leader>a :!ack<SPACE>
 "nmap <leader>s
-"nmap <leader>d
-nmap <leader>f <C-w>
-nmap <leader>g :!go test<CR>
+nmap <leader>d <C-w>
+autocmd FileType go nmap <leader>f :!go run %<CR>
+autocmd FileType go nmap <leader>g :!go test<CR>
 
 nmap <leader>z :nohlsearch<CR>
 nmap <leader>x :x<CR>
@@ -147,3 +147,6 @@ nmap <leader>v <C-v>
 "nmap <leader>3
 "nmap <leader>4
 "nmap <leader>5
+
+" Abbreviations
+autocmd FileType go iab nilee if err != nil { log.Fatal(err) }
