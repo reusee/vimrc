@@ -91,26 +91,6 @@ vnoremap / /\v
 " insert
 imap kd <Esc>
 
-" insert + Ctrl 
-"imap <C-y>
-"imap <C-u>
-"imap <C-i>
-"imap <C-o>
-"imap <C-p>
-
-"imap <C-h>
-imap <C-j> <Esc>:w<CR>:!
-"imap <C-k>
-"imap <C-l>
-"imap <C-;>
-"imap <C-'>
-
-"imap <C-n>
-"imap <C-m>
-"imap <C-,>
-"imap <C-.>
-"imap <C-/>
-
 " normal
 nnoremap j gj
 nnoremap k gk
@@ -131,7 +111,7 @@ nmap <leader>r :tabe ~/
 nmap <leader>t :tabe<SPACE>
 
 nmap <leader>a :!ack<SPACE>
-"nmap <leader>s
+nmap <leader>s :!P="vim" fish<CR>
 nmap <leader>d <C-w>
 autocmd FileType go nmap <leader>f :!go run %<CR>
 autocmd FileType go nmap <leader>g :!go test<CR>
@@ -149,4 +129,6 @@ nmap <leader>v <C-v>
 "nmap <leader>5
 
 " Abbreviations
+
+" golang
 autocmd FileType go iab nilee if err != nil { log.Fatal(err) }
