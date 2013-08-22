@@ -5,8 +5,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'bling/vim-airline'
+"Bundle 'bling/vim-airline'
 Bundle 'Blackrush/vim-gocode'
+Bundle 'SirVer/ultisnips'
 
 filetype plugin indent on
 
@@ -40,7 +41,7 @@ set t_Co=256
 colo molokai
 syntax on
 set nowrap
-set laststatus=2
+"set laststatus=2
 set showmatch
 set cursorline
 set guioptions=acvp
@@ -59,7 +60,11 @@ set pastetoggle=<F2>
 "au InsertEnter * set scrolloff=2
 "au InsertLeave * set scrolloff=25
 set relativenumber
-set guitablabel=%M%t
+"set guitablabel=%M%t
+set showtabline=2
+hi TabLineFill ctermfg=Black ctermbg=Black
+hi TabLine cterm=none ctermfg=White ctermbg=Black
+hi TabLineSel cterm=underline ctermfg=White ctermbg=Black
 
 " File
 "set undofile
