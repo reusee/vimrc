@@ -3,11 +3,14 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
+
 Bundle 'tomasr/molokai'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'bling/vim-airline'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'SirVer/ultisnips'
+Bundle 'ervandew/supertab'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 
@@ -24,12 +27,17 @@ let g:ycm_min_num_of_chars_for_completion=1
 let g:ycm_complete_in_comments=1
 let g:ycm_collect_identifiers_from_comments_and_strings=1
 let g:ycm_add_preview_to_completeopt=0
+let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
 
 "let g:airline_powerline_fonts=1
 let g:airline_left_sep=""
 let g:airline_left_alt_sep=""
 let g:airline_right_sep=""
 let g:airline_right_alt_sep=""
+
+" Supertab
+let g:SuperTabDefaultCompletionType = '<C-Tab>'
 
 " Appearance
 "set list
@@ -132,6 +140,7 @@ nmap <leader>v <C-v>
 
 autocmd FileType go nmap <leader>i :Import<SPACE>
 autocmd FileType go nmap <leader>I :ImportAs<SPACE>
+nmap <leader>p :CtrlPMixed<CR>
 
 " Abbreviations
 
