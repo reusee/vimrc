@@ -5,7 +5,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
 Bundle 'Valloric/YouCompleteMe'
-"Bundle 'bling/vim-airline'
+Bundle 'bling/vim-airline'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'SirVer/ultisnips'
 
@@ -41,7 +41,7 @@ set t_Co=256
 colo molokai
 syntax on
 set nowrap
-"set laststatus=2
+set laststatus=2
 set showmatch
 set cursorline
 set guioptions=acvp
@@ -56,9 +56,6 @@ set ttyfast
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
-"set scrolloff=5
-"au InsertEnter * set scrolloff=2
-"au InsertLeave * set scrolloff=25
 set relativenumber
 "set guitablabel=%M%t
 set showtabline=2
@@ -73,8 +70,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
 set wildignore+=*.pyc,*/.git/*,*/.hg/*
-"au BufWinLeave * silent! mkview
-"au BufWinEnter * silent! loadview
+au BufWinLeave * silent! mkview
+au BufWinEnter * silent! loadview
 
 " Editing
 set gdefault
