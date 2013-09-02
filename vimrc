@@ -133,7 +133,12 @@ nmap <leader>v <C-v>
 "nmap <leader>4
 "nmap <leader>5
 
+autocmd FileType go nmap <leader>i :Import<SPACE>
+autocmd FileType go nmap <leader>I :ImportAs<SPACE>
+
 " Abbreviations
 
 " golang
 autocmd FileType go iab nilee if err != nil { log.Fatal(err) }
+
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
